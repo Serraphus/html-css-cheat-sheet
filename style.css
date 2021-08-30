@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: rgb(60, 50, 185);
+    background-color: rgb(175, 230, 250);
+}
+
+.footer {
+    text-align: right;
+    padding: 20px;
+}
+
+.code {
+    font-family: 'Lucida Console', Courier, monospace;
+    color: gray;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    border: 1px solid darkslateblue;
+    width: 60%;
+}
+
+th {
+    background-color: rgb(250, 185, 250);
+    text-align: center;
+    border: 1px solid darkslateblue;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid darkslateblue;
+    padding: 10px;
+}
+
+th.description, td.description {
+    max-width: 750px;
+}
