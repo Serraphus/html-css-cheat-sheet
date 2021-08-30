@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>HTML &amp; CSS Cheat Sheet</title>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>HTML &amp; CSS Cheat Sheet</h1>
+        </div>
+
+        <div class="main">
+
+            <h3>HTML Elements</h3>
+            <h3>Tables</h3>
+            <h3>Forms</h3>
+                
+                <table>
+                    <thead>
+
+                        <th>Input Type</th>
+                        <th>Example</th>
+                        <th class="description">Description</th>
+                        <th>Code Snippet</th>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td class="code">text</td>
+                            <td><input type="text" value="username"></td>
+                            <td class="description">Attributes for all types of input tags should include <span class="code">name</span>, 
+                                <span class="code">type</span>, <span class="code">id</span>, and 
+                                <span class="code">value</span>.
+                            </td>
+                            <td><span class="code">&lt;input type="text" name="username" id="username" value="username"&gt;</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="code">password</td>
+                            <td><input type="password" value="password"></td>
+                            <td class="description">This is a textbox field that hides the typed 
+                                characters. Using the <span class="code">required</span> attribute
+                            will prevent users from submitting the form while this field is blank.
+                            </td>
+                            <td><span class="code">&lt;input type="password"&gt;</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="code">number</td>
+                            <td><input type="number" value="0"></td>
+                            <td class="description">Specific attributes include <span class="code">min</span>,
+                                <span class="code">max</span>, and <span class="code">step</span>.
+                            </td>
+                            <td><span class="code">&lt;input type="number"&gt;</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="code">range</td>
+                            <td><input type="range" min="1" max="10" step="1"></td>
+                            <td class="description">This produces a slider, also with the properties 
+                                <span class="code">min</span>,
+                                <span class="code">max</span>, and <span class="code">step</span>.
+                            </td>
+                            <td><span class="code">&lt;input type="range" min="1" max="10" step="1"&gt;</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="code">checkbox</td>
+                            <td><label for="butter">Butter</label><input type="checkbox" id="butter">
+                                <label for="jam">Jam</label><input type="checkbox" id="jam">
+                                <label for="cream">Cream</label><input type="checkbox" id="cream">
+                            </td>
+                            <td class="description">For selecting more than one option. Notice here we have 
+                                associated a label with each checkbox <span class="code">id</span>,
+                                in the format<br> <span class="code">&lt;label for="id-name"&gt;</span>.
+                            </td>
+                            <td><span class="code">&lt;input type="checkbox"&gt;</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="code">radio</td>
+                            <td>Gender<br>
+                                <input type="radio" id="male-gender" name="gender" value="male">
+                                <label for="male-gender">Male</label>
+                                <input type="radio" id="female-gender" name="gender" value="female">
+                                <label for="female-gender">Female</label></td>
+                            <td class="description">For mutually-exclusive options. Again, we associate a <span class="code">label</span> to each
+                                option, allowing the user to click on the associated text to select the option, 
+                                instead of having to click on the radiobutton itself.
+                            </td>
+                            <td><span class="code">&lt;input type="radio" name="gender" value="male/female"&gt;</span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="code">select</td>
+                            <td>
+                                <label for="animal-list">Pick an animal:</label><br>
+                                <select id="animal-list" name="animal">
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="fish">Goldfish</option>
+                                        <option value="bird">Parrot</option>
+                                </select>
+
+                            </td>
+                            <td class="description">This tag creates a drop-down list for the user 
+                                to choose from.
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="code">list</td>
+                            <td>
+                                <input list="browsers">
+                                
+                                <datalist id="browsers">
+                                    <option value="Safari">
+                                    <option value="Firefox">
+                                    <option value="Google Chrome">    
+                                </datalist>
+                            </td>
+                            <td class="description">This allows the user to select from a pre-made list,
+                                or if no option suits, they can type their own answer.<br><br>The value of the <span class="code">list</span> 
+                                attribute should match 
+                                the value of the corresponding <span class="code">datalist id</span>.<br><br>
+                                A datalist is essentially an unordered list of options.
+                            </td>
+                            <td>
+                                <div class="code" style="text-align: left">
+                                    <p style="text-align: left">&lt;input list="browsers"&gt;</p>
+                                    <p>&lt;datalist id="browsers"&gt;<br>
+                                    &lt;option value="Safari"&gt;<br>
+                                    &lt;option value="Firefox"&gt;<br>
+                                    &lt;option value="Google Chrome"&gt;<br>
+                                    &lt;/datalist&gt;</p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="code">submit</td>
+                            <td><input type="submit" value="Submit"></td>
+                            <td class="description">A submit button!<br><br>
+                            The <span class="code">value</span> atrribute 
+                            should contain the text you wish to display on the button.</td>
+                            <td><span class="code">&lt;input type="submit" value="Submit"&gt;</span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            <h3>CSS Selectors</h3> <!-- include tag, class, and ID selectors -->
+            <h3>Common CSS properties</h3>
+
+        </div>
+
+        <div class="footer">
+            <p>Updated 30.08.2021</p>
+            <p>&copy; Serraphus</p>
+        </div>
+
+    </body>
+</html>
