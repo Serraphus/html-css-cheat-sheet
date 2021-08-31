@@ -2,8 +2,8 @@ body {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1em;
-    color: rgb(60, 50, 185);
-    background-color: rgb(175, 230, 250);
+    color: #123C69;
+    background-color: #EEE2DC;
 }
 
 .footer {
@@ -13,26 +13,26 @@ body {
 
 .code {
     font-family: 'Lucida Console', Courier, monospace;
-    color: gray;
+    color: #AC3B61;
 }
 
 table {
     margin: auto;
     text-align: center;
-    border: 1px solid darkslateblue;
+    border: 2px solid #123C69;
     width: 60%;
 }
 
 th {
-    background-color: rgb(250, 185, 250);
+    background-color: #EDC7B7;
     text-align: center;
-    border: 1px solid darkslateblue;
+    border: 2px solid #123C69;
     padding: 10px;
 }
 
 td {
     text-align: center;
-    border: 1px solid darkslateblue;
+    border: 2px solid #123C69;
     padding: 10px;
 }
 
